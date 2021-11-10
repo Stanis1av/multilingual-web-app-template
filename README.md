@@ -35,14 +35,14 @@ Change of localization
 
 
 The language switcher is based entirely on Bootstrap.
+
 * Language switcher without flags
 ![language_switcher_without_flags](/screenshots/language_switcher_without_flags.png)
 
 * language switcher with flags
 ![language_switcher_with_flags](/screenshots/language_switcher_with_flags.png)
 
-License
-----
+## License
 
 MIT
 
