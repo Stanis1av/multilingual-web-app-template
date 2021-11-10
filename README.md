@@ -1,24 +1,49 @@
-# README
+# Multilingual Application Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Project Description
+Multilingual application template for Rails 6 projects.
 
-Things you may want to cover:
+### Packages
 
-* Ruby version
+This app uses:
 
-* System dependencies
+* Ruby version 3.0.2
+* Rails version 6.1.4
+* Bootstrap 5.1 (not gem)
 
-* Configuration
+### Installation
 
-* Database creation
+```sh
+$ git clone https://github.com/Stanis1av/multilingual-web-app-template.git
+$ bundle install
+$ rails db:create
+```
 
-* Database initialization
+### UI Interface
 
-* How to run the test suite
+Change of localization
 
-* Services (job queues, cache servers, search engines, etc.)
+* If no locale is defined and Accept-Language == nil, the default is English.
+![the_default_language_is_English](/screenshots/the_default_language_is_English.png)
 
-* Deployment instructions
+* Otherwise, the locale is used, which has the maximum factor weighting.
+![otherwise_maximum_factor_weighting](/screenshots/otherwise_maximum_factor_weighting.png)
 
-* ...
+* The locale can also be assigned by yourself, for this, the method for determining the locale based on the subdomain is used.
+![definition_via_subdomain](/screenshots/definition_via_subdomain.png)
+
+
+
+The language switcher is based entirely on Bootstrap.
+* Language switcher without flags
+![language_switcher_without_flags](/screenshots/language_switcher_without_flags.png)
+
+* language switcher with flags
+![language_switcher_with_flags](/screenshots/language_switcher_with_flags.png)
+
+License
+----
+
+MIT
+
+**Free Software, Hell Yeah!**
